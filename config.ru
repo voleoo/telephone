@@ -1,0 +1,3 @@
+require './telephone'
+
+run Telephone
