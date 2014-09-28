@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/seuros/capistrano-puma.git
+  revision: 6945cc35b0d4f75d13d06b590b1d6df348ea738f
+  specs:
+    capistrano3-puma (0.8.0)
+      capistrano (~> 3.0)
+      puma (>= 2.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -32,6 +40,8 @@ GEM
     pry-byebug (2.0.0)
       byebug (~> 3.4)
       pry (~> 0.10)
+    puma (2.9.1)
+      rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -59,6 +69,7 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-rvm
+  capistrano3-puma!
   pry-byebug
   sinatra
   unicorn

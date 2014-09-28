@@ -11,10 +11,11 @@ set :deploy_via, :copy
 set :keep_releases, 10
 
 set :rvm_type, :user
+set :rvm_ruby_version, '2.1.3'
 set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
-set :linked_files, %w{ config/database.yml config/application.yml }
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
+#set :linked_files, %w{ config/database.yml config/application.yml }
+set :linked_dirs, %w{ log tmp/pids tmp/sockets }
 
 namespace :deploy do
 
